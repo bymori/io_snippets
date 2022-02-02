@@ -4,40 +4,40 @@
  * @Author: by_mori
  * @Date: 2022-02-02 19:40:14
  * @LastEditors: by_mori
- * @LastEditTime: 2022-02-02 20:05:22
+ * @LastEditTime: 2022-02-02 20:35:53
  */
 module.exports = {
   types: [
-    { value: ':construction: WIP', name: '💪  Work in Progress | 开发中' },
-    { value: ':sparkles: feat', name: '✨  Features | 新功能' },
-    { value: ':bug: fix', name: '🐛  Bug Fixes | 修复' },
-    { value: ':art: style', name: '💄  Styles | 代码样式' },
-    { value: ':hammer: refactor', name: '🔨  Code Refactoring | 代码重构' },
-    { value: ':green_heart: fixci', name: '💚  Fixing CI Build | CI 配置' },
-    { value: ':rewind: revert', name: '⏪  Revert | 回退' },
-    { value: ':package: build', name: '📦  Build System | 打包构建' },
+    { value: ':construction: WIP', name: '💪 开发中   | Work in Progress' },
+    { value: ':sparkles: feat', name: '✨ 新功能   | Features' },
+    { value: ':bug: fix', name: '🐛 修复     | Bug Fixes' },
+    { value: ':art: style', name: '💄 代码样式 | Styles' },
+    { value: ':hammer: refactor', name: '🔨 代码重构 | Code Refactoring' },
+    { value: ':green_heart: fixci', name: '💚 CI 配置  | Fixing CI Build' },
+    { value: ':rewind: revert', name: '⏪ 回退     | Revert' },
+    { value: ':package: build', name: '📦 打包构建 | Build System' },
     {
       value: ':thought_balloon: chore',
-      name: '🗯   Chore | 构建/工程依赖/工具',
+      name: '🗯  构建     | Chore | ',
     },
-    { value: ':white_check_mark: test', name: '✅  Tests | 测试' },
-    { value: ':pencil: docs', name: '📝  Documentation | 文档变更' },
-    { value: 'init', name: '🚀  Init | 初始化' },
+    { value: ':white_check_mark: test', name: '✅ 测试     | Tests' },
+    { value: ':pencil: docs', name: '📝 文档变更 | Documentation' },
+    { value: 'init', name: '🚀 初始化   | Init' },
     {
       value: ':lipstick: ui',
-      name: '💄 Updating the UI and style files. | 更新UI和样式文件',
+      name: '💄 更新UI   | UI',
     },
     {
       value: ':truck: mv',
-      name: '🚚 Moving or renaming files | 移动或重命名文件',
+      name: '🚚 文件操作 | mv',
     },
     {
       value: ':fire: prune',
-      name: '🔥 Removing code or files. | 删除代码或文件',
+      name: '🔥 删除code | prune',
     },
     {
       value: ':bookmark: release',
-      name: '🔖 Releasing / Version tags | 初始化 / 发布版本标记 ',
+      name: '🔖 发布 Tag | release',
     },
   ],
 
