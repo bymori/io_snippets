@@ -65,6 +65,7 @@ h1:nth-child(3)::after {
   100% {
     -webkit-clip-path: ellipse(100px 100px at 0% 50%);
     clip-path: ellipse(100px 100px at 0% 50%);
+    /*  MDN clip-path 介绍 https://developer.mozilla.org/zh-CN/docs/Web/CSS/clip-path */
   }
 
   50% {
