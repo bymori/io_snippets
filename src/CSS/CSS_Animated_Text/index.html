@@ -1,0 +1,51 @@
+<!--
+ * @Descripttion: io小栈 —— ioinn.cn
+ * @version: 0.0.1
+ * @Author: by_mori
+ * @Date: 2022-02-03 14:49:19
+ * @LastEditors: by_mori
+ * @LastEditTime: 2022-02-03 15:25:53
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_Animated_Text 实现文字绘制动画及渐变跑马灯效果</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <svg width="700" height="250" class="text">
+        <!-- 定义渐变颜色 -->
+        <defs>
+          <linearGradient id="geekColor" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#91bd3a">
+              <!-- 渐变动画 -->
+              <animate
+                attributeName="stop-color"
+                values="#91bd3a;#12cad6;#91bd3a"
+                dur="10s"
+                begin="3s"
+                repeatCount="indefinite"
+              ></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#12cad6">
+              <!-- 渐变动画 -->
+              <animate
+                attributeName="stop-color"
+                values="#12cad6;#91bd3a;#12cad6"
+                dur="10s"
+                begin="3s"
+                repeatCount="indefinite"
+              ></animate>
+            </stop>
+          </linearGradient>
+        </defs>
+        <text x="100" y="100" class="logo_text">ioinn-MoRi</text>
+      </svg>
+    </div>
+  </body>
+</html>
