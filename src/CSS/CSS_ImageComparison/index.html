@@ -1,0 +1,30 @@
+<!--
+ * @Descripttion: io小栈 —— ioinn.cn
+ * @version: 0.0.1
+ * @Author: by_mori
+ * @Date: 2022-02-04 16:59:43
+ * @LastEditors: by_mori
+ * @LastEditTime: 2022-02-04 17:30:00
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>“前后对比”效果 Image Comparison with Input Range</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="comparison" style="--slide: 500">
+      <input
+        type="range"
+        class="slider"
+        min="0"
+        max="1000"
+        value="500"
+        oninput="this.parentNode.style.setProperty('--slide',`${this.value}`)"
+      />
+    </div>
+  </body>
+</html>
