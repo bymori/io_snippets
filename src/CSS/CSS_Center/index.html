@@ -1,0 +1,111 @@
+<!--
+ * @Descripttion: io小栈 —— ioinn.cn
+ * @version: 0.0.1
+ * @Author: by_mori
+ * @Date: 2022-02-04 20:34:13
+ * @LastEditors: by_mori
+ * @LastEditTime: 2022-02-04 21:20:46
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水平垂直居中方案</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 基础样式 -->
+    <div id="parent">
+      <div id="children"><span>基础样式</span>ioinn-Mori</div>
+    </div>
+
+    <!-- flex -->
+    <div id="parent" class="flex">
+      <div id="children">
+        <span>flex</span>
+        ioinn-Mori
+      </div>
+    </div>
+
+    <!-- grid -->
+    <div id="parent" class="grid">
+      <div id="children"><span>grid</span> ioinn-Mori</div>
+    </div>
+
+    <!-- 相对定位 -->
+    <!-- 1. transform -->
+    <div id="parent">
+      <div id="children" class="transform">
+        <span>transform1</span> ioinn-Mori-
+      </div>
+    </div>
+
+    <div id="parent">
+      <div id="children" class="transform2">
+        <span>transform2</span> ioinn-Mori
+      </div>
+    </div>
+
+    <!-- 2. calc -->
+    <div id="parent">
+      <div id="children" class="calc"><span>calc</span> ioinn-Mori</div>
+    </div>
+
+    <!-- 绝对定位 -->
+    <!-- 1. transform -->
+    <div id="parent" class="positionParent">
+      <div id="children" class="positionChild">
+        <span>绝对定位 transform</span> ioinn-Mori
+      </div>
+    </div>
+
+    <div id="parent" class="positionParent2">
+      <div id="children" class="positionChild2">
+        <span>绝对定位 transform2</span> ioinn-Mori
+      </div>
+    </div>
+
+    <!-- 2. calc -->
+    <div id="parent" class="positionParentCalc">
+      <div id="children" class="positionChildCalc">
+        <span>绝对定位 calc</span> ioinn-Mori
+      </div>
+    </div>
+
+    <!-- 3. 负外边距 -->
+    <div id="parent" class="positionParentOuter">
+      <div id="children" class="positionChildOuter">
+        <span>绝对定位 负外边距</span> ioinn-Mori
+      </div>
+    </div>
+
+    <!-- 4. 自动外边距 -->
+    <div id="parent" class="positionParentAuto">
+      <div id="children" class="positionChildAuto">
+        <span>绝对定位 自动外边距</span> ioinn-Mori
+      </div>
+    </div>
+
+    <div id="parent" class="positionParentAutoIn">
+      <div id="children" class="positionChildAutoIn">
+        <span>绝对定位 自动外边距-inset</span> ioinn-Mori
+      </div>
+    </div>
+
+    <!-- table-cell -->
+    <div id="parent" class="ParentTableCell">
+      <div id="children" class="ChildTableCell">
+        <span>table-cell</span> ioinn-Mori
+      </div>
+    </div>
+
+    <!-- table-cell -->
+    <div id="parent" class="ParentLineHeight">
+      <div id="children" class="ChildLineHeight">
+        <span>line-height</span> ioinn-Mori
+      </div>
+    </div>
+  </body>
+</html>

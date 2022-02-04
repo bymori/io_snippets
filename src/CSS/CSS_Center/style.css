@@ -1,0 +1,174 @@
+/* 基础样式 */
+#parent {
+  background: red;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#children {
+  background: blue;
+}
+
+#children {
+  color: white;
+}
+span {
+  font-size: 36px;
+}
+
+/* flex */
+/* 适用场景：子元素宽高不固定、子元素宽高固定 */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* grid */
+/* 适用场景：子元素宽高不固定、子元素宽高固定 */
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 相对定位 */
+/* 1. transform​ */
+/* 适用场景：子元素宽高不固定、子元素宽高固定  */
+.transform {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 适用场景：子元素宽高固定 */
+.transform2 {
+  width: 350px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-175px, -25px);
+}
+
+/* 2. calc */
+/* 适用场景：子元素宽高固定 */
+.calc {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: calc(50% - 25px);
+  left: calc(50% - 100px);
+}
+
+/* 绝对定位 */
+/* 1. transform​ */
+/* 适用场景：子元素宽高不固定、子元素宽高固定 */
+.positionParent {
+  position: relative;
+}
+.positionChild {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 适用场景：子元素宽高固定 */
+.positionParent2 {
+  position: relative;
+}
+.positionChild2 {
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250px, -25px);
+}
+
+/* 2. calc */
+/* 适用场景：子元素宽高固定 */
+.positionParentCalc {
+  position: relative;
+}
+.positionChildCalc {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 200px);
+}
+
+/* 3. 负外边距 */
+/* 适用场景：子元素宽高固定 */
+.positionParentOuter {
+  position: relative;
+}
+.positionChildOuter {
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -250px;
+}
+
+/* 4. 自动外边距 */
+/* 适用场景：子元素宽高固定 */
+.positionParentAuto {
+  position: relative;
+}
+.positionChildAuto {
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* 4.1. 自动外边距 简写方式 */
+.positionParentAutoIn {
+  position: relative;
+}
+.positionChildAutoIn {
+  width: 600px;
+  height: 50px;
+  position: absolute;
+  inset: 0;
+  /* 等同于 `top: 0; right: 0; bottom: 0; left: 0;` */
+  margin: auto;
+}
+
+/* table-cell */
+/* 适用场景：子元素宽高不固定、子元素宽高固定 */
+.ParentTableCell {
+  width: 800px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.ChildTableCell {
+  display: inline-block;
+}
+
+/* line-height */
+/* 前提：父元素高度固定  适用场景：子元素宽高不固定、子元素宽高固定 */
+.ParentLineHeight {
+  margin-top: 20px;
+
+  line-height: 100px;
+  text-align: center;
+}
+
+.ChildLineHeight {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
