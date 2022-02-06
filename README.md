@@ -14,6 +14,7 @@
   - [QRcodeScan](src/CSS/CSS_QRcodeScan) demo
   - [水平垂直居中方案](src/CSS/CSS_Center) demo
   - [动态彩色背景](src/CSS/CSS_Dynamic_Background) demo
+  - [页面视差滚动特效](src/CSS/CSS_ParallaxScrolling) demo
 
 - JavaScript
   - [RGB格式转十六进制](src/JavaScript/RGBToHexadecimal) demo
