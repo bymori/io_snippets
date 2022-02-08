@@ -19,4 +19,5 @@
 
 - JavaScript
   - [RGB格式转十六进制](src/JavaScript/RGBToHexadecimal) demo
+  - [setTimeout的第三个参数](src/JavaScript/setTimeoutArgN) demo
   
